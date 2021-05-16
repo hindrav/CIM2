@@ -1,0 +1,120 @@
+@media (min-width: $mm) and (orientation: portrait) {}
+@media (min-width: $ml) and (orientation: portrait) {
+    .carousel {
+        .carousel-item {
+            height: 95vh;
+        }
+    }
+}
+@media (min-width: $tab-s) {
+    .about--container__buttons {
+        width: 100%;
+        margin: 0 auto;
+        flex-direction: row;
+        justify-content: center;
+    }
+    .objetives {
+        margin: auto 10px;
+    }
+    .benefits--overlay {
+        flex-direction: row;
+    }
+    .benefits--box {
+        height: 190px !important;
+        & #fa1, #fa2, #fa3, #fa4 {
+            width: 200px;
+            font-size: 2.8rem;
+            margin: 20px 0 0 0 !important;
+        }
+    }
+    .benefits--box>h3 {
+        font-size: 1.2rem;
+        width: 150px;
+        margin-top: 80px;
+    }
+    .projects {
+        .projects--container {
+            padding: 60px 20px;
+            background: rgba(0, 0, 0, 0.3);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+        }
+    }
+    .projects--cards {
+        display: inherit;
+        box-sizing: border-box;
+        width: 100%;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        .card {
+            width: 200px !important;
+            margin: 30px;
+            border-radius: 17px;
+            border: transparent;
+            & img {
+                width: 200px;
+                border-radius: 17px 17px 0 0;
+            }
+            & .card-body {
+                color: black;
+                background: $cim-color;
+                width: 200px;
+                border-radius: 0 0 17px 17px;
+                z-index: 20;
+                & p {
+                    color: white;
+                }
+            }
+            &:hover {
+                transform: scale3d(1.2, 1.2, 1);
+                transition: 1s;
+            }
+        }
+    }
+}
+@media (min-width: $lap){
+    .carousel {
+        .carousel-item {
+            height: 80vh;
+        }
+    }
+    .carousel-inner__body h1{
+        font-size: 2.4rem;
+    }
+    .carousel-inner__body p{
+        font-size: 1.3rem;
+    }
+    .btn-cim{
+        width: 130px;
+        text-align: center;
+    }
+    .projects--cards {
+        .card {
+            width: 280px !important;
+            margin: 30px;
+            border-radius: 17px;
+            border: transparent;
+            & img {
+                width: 280px;
+                border-radius: 17px 17px 0 0;
+            }
+            & .card-body {
+                color: black;
+                background: $cim-color;
+                width: 280px;
+                border-radius: 0 0 17px 17px;
+                z-index: 20;
+                & p {
+                    color: white;
+                }
+            }
+            &:hover {
+                transform: scale3d(1.2, 1.2, 1);
+                transition: 1s;
+            }
+        }
+    }
+}

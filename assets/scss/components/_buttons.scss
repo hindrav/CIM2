@@ -1,0 +1,42 @@
+.btn-cim, .btn-cim__white, .btn-contact{
+    background: white;
+    color: $cim-color;
+    font-weight: bold;
+    @include button;
+    &:hover{
+        color: white;
+        background: $cim-color;
+        border: 1px solid $cim-color;
+    }
+}
+.btn-slide{
+    display: flex;
+    height: 170px;
+    width: 10px;
+    padding: 15px;
+    justify-content: center;
+    align-items: center;
+    color: rgb(128, 128, 128);
+    font-size: 1.1rem;
+    background: rgba(0,0,0,0.1);
+    &:hover{
+        color: white;
+        background: rgba(0,0,0,0.6);
+        transition: 0.2s;
+    }
+    z-index: 20;
+}
+.btnx1, .btnx2, .btnx3, .btnx4{
+    position: absolute;
+}
+.btnx1, .btnx3{
+    border-radius: 15px 0 0 15px;
+    left: 0;
+}
+.btnx2, .btnx4{
+    border-radius: 0 15px 15px 0;
+    right: 0;
+}
+.objetives{
+    width: 200px;
+}

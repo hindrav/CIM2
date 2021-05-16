@@ -1,0 +1,67 @@
+.projects {
+    width: 100%;
+    height: 100%;
+    background-image: url('../../../images/bg5.jpg');
+    background-attachment: fixed;
+    @include bgformat;
+}
+.projects {
+    .projects--container {
+        padding: 60px 20px;
+        background: rgba(0, 0, 0, 0.3);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        & h2{
+            width: 100%;
+            margin-bottom: 20px;
+            font-size: 2rem;
+            color: white;
+            text-align: center;
+        }
+    }
+}
+.projects--cards {
+    display: flex;
+}
+.projects--cards {
+    display: inherit;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    .card {
+        width: 230px !important;
+        margin: 30px;
+        border-radius: 17px;
+        border: transparent;
+        & img {
+            width: 230px;
+            border-radius: 17px 17px 0 0;
+        }
+        & .card-body {
+            color: black;
+            background: $cim-color;
+            width: 230px;
+            border-radius: 0 0 17px 17px;
+            z-index: 20;
+            & p {
+                color: white;
+            }
+        }
+        &:hover {
+            transform: scale3d(1.2, 1.2, 1);
+            transition: 1s;
+        }
+    }
+}
+.projects--cards {
+    & p {
+        font-size: 0.8rem;
+        font-weight: 900;
+        letter-spacing: 2px;
+        text-transform: uppercase;
+        color: white;
+        text-align: center;
+    }
+}

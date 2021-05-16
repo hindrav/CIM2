@@ -1,0 +1,26 @@
+.about{
+    display: flex;
+    flex-direction: column;
+}
+.about .container h2{
+    font-size: 1.8rem;
+    color: $warm-black;
+}
+.about .container{
+    padding: 35px 30px;
+    text-align: center;
+}
+.multi-collapse .card-body{
+    text-align: left;
+}
+.about--container__buttons{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.about{
+    .card-body{
+        margin-top: 14px;
+        border-radius: 12px !important;
+    }
+}

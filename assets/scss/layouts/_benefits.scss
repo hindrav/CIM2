@@ -1,0 +1,46 @@
+.benefits {
+    width: 100%;
+    height: 100%;
+    padding: 40px 20px;
+    background-image: url('../../../images/bg4.jpg');
+    @include bgformat;
+    background-attachment: fixed;
+    align-items: center;
+}
+
+.benefits--overlay {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+.benefits--overlay {
+    .benefits--box {
+        position: relative;
+        display: flex;
+        width: 220px;
+        height: 200px;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        color: white;
+        & #fa1, #fa2, #fa3, #fa4 {
+            width: 200px;
+            font-size: 3.2rem;
+            top: 0;
+            position: absolute;
+            margin-top: 40px;
+        }
+    }
+}
+.benefits--box>h3 {
+    width: 200px;
+    font-size: 1.3rem;
+    font-weight: 100;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    margin-top: 110px;
+    padding: 0 10px;
+}

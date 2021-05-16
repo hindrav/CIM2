@@ -1,0 +1,50 @@
+.carousel{
+    position: relative;
+}
+.carousel{
+    .carousel-item{
+        height: 90vh;
+    }
+}
+.carousel-inner__body h1{
+    font-size: 1.9rem;
+}
+.carousel{
+    .carousel-item img{
+        max-height: 100%;
+        object-fit: cover;
+        height: inherit;
+        @include bgformat;
+    }
+}
+.carousel-inner__body{
+    position: absolute;
+    display: flex;
+    width: 100%;
+    height: 100%;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    padding: 20px 30px;
+
+}
+.overlay{
+    @include overlay;
+}
+.carousel{
+    .carousel-inner__body{
+        .hero-icon{
+            width: 80px;
+            margin: -50px auto 10px auto;
+        }
+    }
+}
+.carousel-inner__body h1, .carousel-inner__body p{
+    color: white;
+    text-align: center;
+    padding: 0 10px;
+}

@@ -1,0 +1,41 @@
+.productsNservices{
+    display: flex;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 35px 15px 75px 15px;
+    background: $notwhite;
+}
+.productsNservices{
+    .products, .services{
+        h2{
+            width: 100%;
+            margin: 40px auto 10px;
+            font-size: 2rem;
+            color: $warm-black;
+            text-align: center;
+        }
+    }
+}
+
+.products--container, .services--container{
+    position: relative;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    overflow-x: scroll;
+    overflow-y: hidden;
+    overscroll-behavior-x: content;
+    scroll-snap-type: x mandatory;
+    &::-webkit-scrollbar{
+        display: none;
+    }
+}
+.btnx1, .btnx3{
+    margin: 20px 0 0 8px;
+}
+.btnx2, .btnx4{
+    margin: -189px 4px 0 0;
+}
