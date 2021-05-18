@@ -1,8 +1,19 @@
-@media (min-width: $mm) and (orientation: portrait) {}
+@media (min-width: $mm) and (orientation: portrait) {
+    .about{
+        .card-body{
+            width: 270px;
+        }
+    }
+}
 @media (min-width: $ml) and (orientation: portrait) {
     .carousel {
         .carousel-item {
             height: 95vh;
+        }
+    }
+    .about{
+        .card-body{
+            width: 315px;
         }
     }
 }
@@ -12,6 +23,11 @@
         margin: 0 auto;
         flex-direction: row;
         justify-content: center;
+    }
+    .about{
+        .card-body{
+            width: 480px;
+        }
     }
     .objetives {
         margin: auto 10px;
@@ -90,6 +106,15 @@
     .btn-cim{
         width: 130px;
         text-align: center;
+    }
+    .about--container__buttons{
+        margin-bottom: 20px;
+    }
+    .about{
+        .card-body{
+            width: 630px;
+            border: none !important;
+        }
     }
     .productsNservices{
         width: 100vw !important;

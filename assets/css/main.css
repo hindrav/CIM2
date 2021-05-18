@@ -323,6 +323,9 @@ a, p, span, ul, li {
 .about .card-body {
   margin-top: 14px;
   border-radius: 12px !important;
+  width: 260px;
+  min-width: 260px;
+  margin: 0 auto;
 }
 
 .productsNservices {
@@ -587,9 +590,18 @@ a, p, span, ul, li {
   text-align: center;
 }
 
+@media (min-width: 374px) and (orientation: portrait) {
+  .about .card-body {
+    width: 270px;
+  }
+}
 @media (min-width: 424px) and (orientation: portrait) {
   .carousel .carousel-item {
     height: 95vh;
+  }
+
+  .about .card-body {
+    width: 315px;
   }
 }
 @media (min-width: 764px) {
@@ -603,6 +615,10 @@ a, p, span, ul, li {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
+  }
+
+  .about .card-body {
+    width: 480px;
   }
 
   .objetives {
@@ -708,6 +724,15 @@ a, p, span, ul, li {
   .btn-cim {
     width: 130px;
     text-align: center;
+  }
+
+  .about--container__buttons {
+    margin-bottom: 20px;
+  }
+
+  .about .card-body {
+    width: 630px;
+    border: none !important;
   }
 
   .productsNservices {
