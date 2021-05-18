@@ -1,3 +1,12 @@
+*, *:after, *:before {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+html {
+  overflow-x: hidden;
+}
+
 h1, h2, h3, h4, h5, strong {
   font-family: "Oswald", sans-serif;
   font-weight: 400;
@@ -10,19 +19,18 @@ a, p, span, ul, li {
 .btn-cim, .btn-cim__white, .btn-contact {
   background: white;
   color: #1aa7eec4;
-  font-weight: bold;
   padding: 0.375rem 0.75rem;
   padding-top: 0.375rem;
   padding-right: 0.75rem;
   padding-bottom: 0.375rem;
   padding-left: 0.75rem;
-  font-weight: 400;
-  line-height: 1.5rem;
+  font-weight: bold;
+  line-height: 1.6rem;
   vertical-align: middle;
   cursor: pointer;
   text-decoration: none;
   text-transform: uppercase;
-  font-size: 0.7rem;
+  font-size: 0.8rem;
   font-weight: 700;
   -webkit-user-select: none;
      -moz-user-select: none;
@@ -81,9 +89,14 @@ a, p, span, ul, li {
 }
 
 .navbar {
+  width: 100vw;
   height: -webkit-fit-content;
   height: -moz-fit-content;
   height: fit-content;
+}
+
+.navbar .container-fluid {
+  padding: 0 !important;
 }
 
 .navbar .container-fluid .navbar-brand {
@@ -98,6 +111,7 @@ a, p, span, ul, li {
 
 .navbar-brand .navbar-brand__image img {
   width: 70px;
+  margin-left: 10px;
 }
 
 .navbar .container-fluid .navbar-toggler {
@@ -113,14 +127,45 @@ a, p, span, ul, li {
 }
 
 .navbar-nav {
+  margin-left: auto !important;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
 }
 
 .navbar-nav .nav-item .nav-link {
-  padding-left: 20px;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding-left: 40px;
+  font-size: 0.7rem;
+  font-weight: bold;
   letter-spacing: 1px;
+  text-transform: uppercase;
+}
+.navbar-nav .nav-item .nav-link:after {
+  content: "";
+  width: 0%;
+  margin-top: 3px;
+  height: 3px;
+  left: 0;
+  background: #1aa7eec4;
+}
+.navbar-nav .nav-item .nav-link:hover::after {
+  width: 100%;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+}
+
+.navbar-nav .nav-item:nth-child(1) {
+  margin-top: 15px;
 }
 
 .nav-phone {
@@ -130,6 +175,7 @@ a, p, span, ul, li {
 
 .carousel {
   position: relative;
+  width: 100vw;
 }
 
 .carousel .carousel-item {
@@ -228,14 +274,14 @@ a, p, span, ul, li {
   margin: 0 auto;
   font-size: 1.3rem;
   line-height: 1.4rem;
-  font-weight: 400;
+  font-weight: 300;
   text-align: center;
   border: transparent;
   padding: 0 20px 15px 20px;
 }
 
 .clients {
-  width: 100%;
+  width: 100vw;
   height: 140px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -287,6 +333,7 @@ a, p, span, ul, li {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  width: 100vw;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
@@ -332,8 +379,10 @@ a, p, span, ul, li {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  width: 100%;
+  width: 100vw;
   height: 100%;
+  -webkit-box-sizing: border-box !important;
+          box-sizing: border-box !important;
   display: flex;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
@@ -341,14 +390,13 @@ a, p, span, ul, li {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  padding: 35px 15px 75px 15px;
+  padding: 35px 0 75px 0;
   background: #f7f7f7;
 }
 
 .pNs--container {
   width: 100%;
   height: 100%;
-  padding: 5px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -378,6 +426,7 @@ a, p, span, ul, li {
       -ms-flex-align: center;
           align-items: center;
   overflow-x: scroll;
+  padding: 0 22px;
   overflow-y: hidden;
   overscroll-behavior-x: content;
   -ms-scroll-snap-type: x mandatory;
@@ -396,7 +445,7 @@ a, p, span, ul, li {
 }
 
 .benefits {
-  width: 100%;
+  width: 100vw;
   height: 100%;
   padding: 40px 20px;
   background-image: url("../../../images/bg4.jpg");
@@ -457,12 +506,12 @@ a, p, span, ul, li {
   position: absolute;
   top: 0;
   bottom: 0;
-  margin-top: 110px;
+  margin-top: 120px;
   padding: 0 10px;
 }
 
 .projects {
-  width: 100%;
+  width: 100vw;
   height: 100%;
   background-image: url("../../../images/bg5.jpg");
   background-attachment: fixed;
@@ -473,7 +522,7 @@ a, p, span, ul, li {
 
 .projects .projects--container {
   padding: 60px 20px;
-  background: rgba(0, 0, 0, 0.3);
+  background: rgba(0, 0, 0, 0.2) !important;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -555,8 +604,8 @@ a, p, span, ul, li {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  width: 100%;
-  height: 40vh;
+  width: 100vw;
+  height: 100%;
 }
 
 .contact .container-fluid {
@@ -573,7 +622,7 @@ a, p, span, ul, li {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  padding: 50px 30px;
+  padding: 60px 30px;
 }
 
 .contact .container-fluid h2 {
@@ -593,6 +642,10 @@ a, p, span, ul, li {
 @media (min-width: 374px) and (orientation: portrait) {
   .about .card-body {
     width: 270px;
+  }
+
+  .products--container, .services--container {
+    padding: 0 45px;
   }
 }
 @media (min-width: 424px) and (orientation: portrait) {
@@ -709,8 +762,21 @@ a, p, span, ul, li {
   }
 }
 @media (min-width: 1023px) {
+  .navbar-nav {
+    margin-right: 50px;
+  }
+
+  .navbar-nav .nav-item .nav-link {
+    font-size: 0.9rem;
+    padding: 20px 12px 12px 20px;
+  }
+
+  .navbar-nav .nav-item:nth-child(1) {
+    margin-top: 0;
+  }
+
   .carousel .carousel-item {
-    height: 80vh;
+    height: 90vh;
   }
 
   .carousel-inner__body h1 {
@@ -764,6 +830,15 @@ a, p, span, ul, li {
             transform: scale3d(1.2, 1.2, 1);
     -webkit-transition: 1s;
     transition: 1s;
+  }
+
+  .benefits--box {
+    margin: 0 25px;
+  }
+}
+@media (min-width: 1439px) {
+  .benefits--box {
+    margin: 0 35px;
   }
 }
 /*# sourceMappingURL=main.css.map */

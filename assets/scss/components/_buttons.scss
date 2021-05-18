@@ -1,7 +1,6 @@
 .btn-cim, .btn-cim__white, .btn-contact{
     background: white;
     color: $cim-color;
-    font-weight: bold;
     @include button;
     &:hover{
         color: white;

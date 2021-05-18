@@ -1,17 +1,17 @@
 .productsNservices{
     display: flex;
-    width: 100%;
+    width: 100vw;
     height: 100%;
+    box-sizing: border-box !important;
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 35px 15px 75px 15px;
+    padding: 35px 0 75px 0;
     background: $notwhite;
 }
 .pNs--container{
     width: 100%;
     height: 100%;
-    padding: 5px;
     display: flex;
     flex-direction: column;
 }
@@ -33,6 +33,7 @@
     justify-content: start;
     align-items: center;
     overflow-x: scroll;
+    padding: 0 22px;
     overflow-y: hidden;
     overscroll-behavior-x: content;
     scroll-snap-type: x mandatory;

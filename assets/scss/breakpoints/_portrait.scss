@@ -4,6 +4,9 @@
             width: 270px;
         }
     }
+.products--container, .services--container{
+    padding: 0 45px;
+}
 }
 @media (min-width: $ml) and (orientation: portrait) {
     .carousel {
@@ -92,9 +95,27 @@
     }
 }
 @media (min-width: $lap){
+    .navbar-nav {
+        margin-right: 50px;
+    }
+    .navbar-nav{
+        .nav-item{
+            .nav-link{
+                font-size: 0.9rem;
+                padding: 20px 12px 12px 20px;
+            }
+        }
+    }
+    .navbar-nav{
+        .nav-item{
+            &:nth-child(1){
+                margin-top: 0;
+            }
+        }
+    }
     .carousel {
         .carousel-item {
-            height: 80vh;
+            height: 90vh;
         }
     }
     .carousel-inner__body h1{
@@ -144,5 +165,13 @@
                 transition: 1s;
             }
         }
+    }
+    .benefits--box{
+        margin: 0 25px;
+    }
+}
+@media (min-width: $lapL){
+    .benefits--box{
+        margin: 0 35px;
     }
 }
