@@ -1,13 +1,21 @@
 {
-  "name": "CIM",
+  "name": "cim",
   "version": "1.0.0",
-  "description": "",
   "main": "index.js",
   "scripts": {
     "start": "node index.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
-  "author": "",
-  "license": "ISC"
+  "author": "Hindra <hindrave@gmail.com>",
+  "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/hindrav/CIM2.git"
+  },
+  "bugs": {
+    "url": "https://github.com/hindrav/CIM2/issues"
+  },
+  "homepage": "https://github.com/hindrav/CIM2#readme",
+  "description": ""
 }
